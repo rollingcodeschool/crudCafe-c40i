@@ -16,9 +16,9 @@ function App() {
       {/* <Error404></Error404> */}
       {/* <Inicio></Inicio> */}
       {/* <DetalleProducto></DetalleProducto> */}
-      {/* <CrearProducto></CrearProducto> */}
+      <CrearProducto></CrearProducto>
       {/* <EditarProducto></EditarProducto> */}
-      <Administrador></Administrador>
+      {/* <Administrador></Administrador> */}
       <Footer></Footer>
     </>
   );
