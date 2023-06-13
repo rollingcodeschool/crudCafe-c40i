@@ -7,10 +7,17 @@ import { useForm } from "react-hook-form";
 const Login = () => {
   const { register, handleSubmit, formState: { errors}, reset } = useForm();
 
-login();
+
 
 const onSubmit = (usuario)=>{
-  console.log(usuario);
+  login(usuario).then((respuesta)=>{
+    console.log(respuesta)
+    if(respuesta){
+      //guardar mi usuario en session o localstorage.
+    }else{
+      //mostrar un mensaje  de error
+    }
+  })
 }
 
   return (
