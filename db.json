@@ -9,28 +9,12 @@
       "imagen": "https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      "id": 2,
-      "nombreProducto": "te",
-      "precio": 300,
-      "descripcion": "alguna descripcion...",
-      "categoria": "bebida caliente",
-      "imagen": "https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
       "id": 3,
       "nombreProducto": "cortado",
       "precio": 300,
       "descripcion": "alguna descripcion...",
       "categoria": "bebida caliente",
       "imagen": "https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      "nombreProducto": "brownie",
-      "precio": 400,
-      "descripcion": "alguna descripcion...",
-      "categoria": "dulce",
-      "imagen": "https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "id": 4
     },
     {
       "nombreProducto": "1kg de pan",
@@ -45,13 +29,6 @@
       "imagen": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "categoria": "dulce",
       "id": 6
-    },
-    {
-      "nombreProducto": "medialuna salada",
-      "precio": "160",
-      "imagen": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      "categoria": "salado",
-      "id": 7
     }
   ],
   "usuarios": [

@@ -57,3 +57,13 @@ export const crearProducto = async (producto)=>{
         console.log(error)
     }
 }
+export const borrarProducto = async (id)=>{
+    try{
+        const respuesta = await fetch(URL_productos+'/'+id,{
+            method: "DELETE"
+        });
+        return respuesta;
+    }catch (error){
+        console.log(error)
+    }
+}
