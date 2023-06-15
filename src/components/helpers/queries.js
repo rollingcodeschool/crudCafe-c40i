@@ -43,6 +43,16 @@ export const obtenerProductos = async ()=>{
     }
 }
 
+export const obtenerUnProducto = async (id)=>{
+    try{
+        const respuesta = await fetch(URL_productos+'/'+id);
+        const producto = await respuesta.json();
+        return producto;
+    }catch (error){
+        console.log(error)
+    }
+}
+
 export const crearProducto = async (producto)=>{
     try{
         const respuesta = await fetch(URL_productos,{
@@ -61,6 +71,21 @@ export const borrarProducto = async (id)=>{
     try{
         const respuesta = await fetch(URL_productos+'/'+id,{
             method: "DELETE"
+        });
+        return respuesta;
+    }catch (error){
+        console.log(error)
+    }
+}
+
+export const editarProducto = async (producto, id)=>{
+    try{
+        const respuesta = await fetch(URL_productos+'/'+id,{
+            method: "PUT",
+            headers: {
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify(producto)
         });
         return respuesta;
     }catch (error){
