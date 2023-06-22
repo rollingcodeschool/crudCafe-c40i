@@ -12,6 +12,7 @@ export const login = async (usuario)=>{
     try{
         //pedir a la api la lista de usuarios
         const respuesta = await fetch(URL_usuario);
+        console.log(respuesta);
         const listaUsuarios = await respuesta.json();
         //buscar si en la lista de usuarios existe el mail
         const usuarioBuscado = listaUsuarios.find((itemUsuario)=> itemUsuario.email === usuario.email);
