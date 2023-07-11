@@ -23,6 +23,7 @@ const EditarProducto = () => {
       setValue('nombreProducto', respuesta.nombreProducto)
       setValue('precio', respuesta.precio)
       setValue('categoria', respuesta.categoria)
+      setValue('imagen', respuesta.imagen)
 
     })
   }, [])
