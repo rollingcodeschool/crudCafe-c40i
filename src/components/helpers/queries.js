@@ -77,7 +77,8 @@ export const crearProducto = async (producto)=>{
         const respuesta = await fetch(URL_productos,{
             method: "POST",
             headers: {
-                "Content-Type":"application/json"
+                "Content-Type":"application/json",
+                "x-token": JSON.parse(sessionStorage.getItem('usuario')).token
             },
             body: JSON.stringify(producto)
         });
@@ -89,7 +90,10 @@ export const crearProducto = async (producto)=>{
 export const borrarProducto = async (id)=>{
     try{
         const respuesta = await fetch(URL_productos+'/'+id,{
-            method: "DELETE"
+            method: "DELETE",
+            headers: {
+                "x-token": JSON.parse(sessionStorage.getItem('usuario')).token
+            },
         });
         return respuesta;
     }catch (error){
@@ -102,7 +106,8 @@ export const editarProducto = async (producto, id)=>{
         const respuesta = await fetch(URL_productos+'/'+id,{
             method: "PUT",
             headers: {
-                "Content-Type":"application/json"
+                "Content-Type":"application/json",
+                "x-token": JSON.parse(sessionStorage.getItem('usuario')).token
             },
             body: JSON.stringify(producto)
         });
